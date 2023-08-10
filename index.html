@@ -1,19 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Observatorio migración</title>
-    <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
 
 <!-- Menu -->
-
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Observatorio</a>
+  <a class="navbar-brand" href="#">Migración Medellín</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -38,79 +37,92 @@
   </div>
 </nav>
 
-<!-- Tarjetas -->
-
-<div class="container mt-5">
-    <h2 class="text-center mt-4 mb-4 title_card">Líneas temáticas</h2>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card">
-          <img src="./imagenes/salud.png" class="card-img-top img-fluid" alt="Imagen 1">
-          <div class="card-body">
-            <h5 class="card-title">Salud</h5>
-            <p class="card-text">Descripción de la tarjeta 1.</p>
-            <a href="./pages/salud.html" class="btn btn-primary">Ver mas</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card">
-          <img src="./imagenes/educacion.jpg" class="card-img-top img-fluid" alt="Imagen 2">
-          <div class="card-body">
-            <h5 class="card-title">Educación</h5>
-            <p class="card-text">Descripción de la tarjeta 2.</p>
-            <a href="./pages/educacion.html" class="btn btn-primary">Ver mas</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card">
-          <img src="./imagenes/integrate.png" class="card-img-top img-fluid" alt="Imagen 3">
-          <div class="card-body">
-            <h5 class="card-title">Intégrate</h5>
-            <p class="card-text">Descripción de la tarjeta 3.</p>
-            <a href="./pages/integrate.html" class="btn btn-primary">Ver más</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mt-4">
-        <div class="card">
-          <img src="./imagenes/123social.png" class="card-img-top img-fluid" alt="Imagen 4">
-          <div class="card-body">
-            <h5 class="card-title">Emergencias</h5>
-            <p class="card-text">Descripción de la tarjeta 4.</p>
-            <a href="#" class="btn btn-primary">Botón</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mt-4">
-        <div class="card">
-          <img src="./imagenes/next.png" class="card-img-top img-fluid" alt="Imagen 5">
-          <div class="card-body">
-            <h5 class="card-title">Tarjeta 5</h5>
-            <p class="card-text">Descripción de la tarjeta 5.</p>
-            <a href="#" class="btn btn-primary">Botón</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mt-4">
-        <div class="card">
-          <img src="./imagenes/next.png" class="card-img-top img-fluid" alt="Imagen 6">
-          <div class="card-body">
-            <h5 class="card-title">Tarjeta 6</h5>
-            <p class="card-text">Descripción de la tarjeta 6.</p>
-            <a href="#" class="btn btn-primary">Botón</a>
-          </div>
-        </div>
-      </div>
+<div class="d-flex">
+  <!-- Sidebar -->
+  <div class="bg-light border-right" id="sidebar-wrapper">
+    <h5 class="mt-5 ml-3">Enlaces de interés</h5>
+    <div class="list-group list-group-flush">
+      <a href="https://app.powerbi.com/view?r=eyJrIjoiODEyNDQ4ZWItZTExMS00N2U4LWFkNjgtZmE3MTdiYTMxMjdmIiwidCI6IjA0MjYwZTIwLTIzNGMtNGM5Zi1hOWRkLTc5Mjg2YjFiNzBhYyIsImMiOjR9" class="list-group-item list-group-item-action bg-light" target="_blank">SISBEN</a>
+      <a href="https://app.powerbi.com/view?r=eyJrIjoiNTU5MDk3MjQtYmE0OC00NTg5LTg3OWItOWIxMTlkNTQxMGU5IiwidCI6IjA0MjYwZTIwLTIzNGMtNGM5Zi1hOWRkLTc5Mjg2YjFiNzBhYyIsImMiOjR9" class="list-group-item list-group-item-action bg-light" target="_blank">Trabajo</a>
+      <a href="https://app.powerbi.com/view?r=eyJrIjoiYmJiYTEwYjktZDg2Ni00M2Q2LWFlNGQtZDg3NGUyZDk2Y2QwIiwidCI6IjA0MjYwZTIwLTIzNGMtNGM5Zi1hOWRkLTc5Mjg2YjFiNzBhYyIsImMiOjR9&pageName=ReportSection739799460e218c81047b" class="list-group-item list-group-item-action bg-light" target="_blank">Colombianos retornados</a>
+      <a href="https://app.powerbi.com/view?r=eyJrIjoiNGU1NDAxMDMtZGY1Yy00NzY2LTk4Y2MtYzc5YmUzZTIyYmNlIiwidCI6IjA0MjYwZTIwLTIzNGMtNGM5Zi1hOWRkLTc5Mjg2YjFiNzBhYyIsImMiOjR9" class="list-group-item list-group-item-action bg-light" target="_blank">Niños, niñas adolescentes y familias</a>
+      <a href="https://app.powerbi.com/view?r=eyJrIjoiZDhjOTE0YjUtYTMyNi00N2RjLWIwMzctN2Y3ZDJjMzJlNGZlIiwidCI6IjA0MjYwZTIwLTIzNGMtNGM5Zi1hOWRkLTc5Mjg2YjFiNzBhYyIsImMiOjR9&pageName=ReportSection8dbad414300826b794cd" class="list-group-item list-group-item-action bg-light" target="_blank">Estatuto Temporal de Protección para Migrantes Venezolanos</a>
     </div>
   </div>
 
+   <!-- Tarjetas -->  
+
+  <div class="container mt-5">
+    <h2 class="text-center mt-4 mb-4 title_card">Líneas temáticas</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="./imagenes/salud.png" class="card-img-top img-fluid" alt="Imagen 1">
+              <div class="card-body">
+                <h5 class="card-title">Salud</h5>
+                <p class="card-text">Descripción de la tarjeta 1.</p>
+                <a href="./pages/salud.html" class="btn btn-primary">Ver mas</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="./imagenes/educacion.jpg" class="card-img-top img-fluid" alt="Imagen 2">
+              <div class="card-body">
+                <h5 class="card-title">Educación</h5>
+                <p class="card-text">Descripción de la tarjeta 2.</p>
+                <a href="./pages/educacion.html" class="btn btn-primary">Ver mas</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="./imagenes/integrate.png" class="card-img-top img-fluid" alt="Imagen 3">
+              <div class="card-body">
+                <h5 class="card-title">Intégrate</h5>
+                <p class="card-text">Descripción de la tarjeta 3.</p>
+                <a href="./pages/integrate.html" class="btn btn-primary">Ver más</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mt-4">
+            <div class="card">
+              <img src="./imagenes/123social.png" class="card-img-top img-fluid" alt="Imagen 4">
+              <div class="card-body">
+                <h5 class="card-title">Emergencias</h5>
+                <p class="card-text">Descripción de la tarjeta 4.</p>
+                <a href="#" class="btn btn-primary">Botón</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mt-4">
+            <div class="card">
+              <img src="./imagenes/next.png" class="card-img-top img-fluid" alt="Imagen 5">
+              <div class="card-body">
+                <h5 class="card-title">Tarjeta 5</h5>
+                <p class="card-text">Descripción de la tarjeta 5.</p>
+                <a href="#" class="btn btn-primary">Botón</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mt-4">
+            <div class="card">
+              <img src="./imagenes/next.png" class="card-img-top img-fluid" alt="Imagen 6">
+              <div class="card-body">
+                <h5 class="card-title">Tarjeta 6</h5>
+                <p class="card-text">Descripción de la tarjeta 6.</p>
+                <a href="#" class="btn btn-primary">Botón</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+  </div>
+</div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    
 </body>
 </html>

@@ -1,3 +1,46 @@
-.title_card{
-    color: blue;
-}
+.title_card {
+    color: rgb(31, 31, 32);
+  }
+  
+  /* Estilos para el menú de navegación */
+  .navbar {
+    width: 100%;
+  }
+  
+  /* Estilos para el sidebar */
+  #sidebar-wrapper {
+    width: 300px; /* Ancho ajustado */
+  }
+  
+  /* Contenedor para el contenido y tarjetas */
+  .container {
+    margin-left: 40px;
+    margin-right: 40px; /* Ajuste de margen según el ancho de tu sidebar */
+    flex: 1; /* Asegura que el contenedor ocupe el espacio restante */
+  }
+  
+  /* Ajustes para que las tarjetas se vean bien en diferentes tamaños de pantalla */
+  @media (max-width: 768px) {
+    .container {
+        margin-left: 0;
+    }
+  }
+  
+  /* Contenedor para la disposición de flexbox */
+  .d-flex {
+    display: flex;
+  }
+  
+  /* Asegura que el contenido se centre en la pantalla */
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  
+  /* Centra el contenido principal */
+  .main-content {
+    flex: 1;
+    display: flex;
+  }
+  
