@@ -50,13 +50,5 @@
   }
 
     
-  .submenu {
-    display: none; /* Ocultar por defecto */
-    margin-left: 20px; /* Desplazar hacia la derecha para simular jerarquía */
-  }
-  .list-group-item:hover .submenu {
-    display: block; /* Mostrar al pasar el cursor */
-  }
-
 
   
