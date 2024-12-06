@@ -29,6 +29,9 @@
   /* Contenedor para la disposición de flexbox */
   .d-flex {
     display: flex;
+    gap: 20px; /* Espacio entre las tarjetas */
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten automáticamente en pantallas pequeñas */
+    justify-content: center;
   }
   
   /* Asegura que el contenido se centre en la pantalla */
@@ -48,6 +51,32 @@
     width: auto;
     height: 60px;
   }
+
+  /* Tarjeta */
+.card {
+  display: flex;
+  flex-direction: column; /* Alineación vertical */
+  justify-content: space-between; /* Asegura que el footer esté al fondo */
+  height: 100%; /* Asegura que todas las tarjetas tengan la misma altura */
+}
+
+/* Imagen en la tarjeta */
+.card img {
+  max-height: 150px; /* Ajusta el tamaño máximo de la imagen */
+  object-fit: contain; /* Evita deformaciones */
+}
+
+/* Contenido de la tarjeta */
+.card-body {
+  flex-grow: 1; /* Permite que el contenido ocupe el espacio necesario */
+  text-align: center;
+}
+
+/* Footer con el botón */
+.card-footer {
+  text-align: center;
+  margin-top: auto; /* Empuja el footer al fondo */
+}
 
     
 
