@@ -23,7 +23,6 @@
   @media (max-width: 768px) {
     .container {
         margin-left: 0;
-        justify-content: space-between;
     }
   }
   
